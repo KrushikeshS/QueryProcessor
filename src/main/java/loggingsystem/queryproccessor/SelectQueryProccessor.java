@@ -27,7 +27,7 @@ public class SelectQueryProccessor implements QueryProccessor{
             startTime = new Timestamp(startDate.getTime());
 
             Date endDate = dateFormat.parse(queryElements.get(queryElements.indexOf("between")+3));
-            startTime = new Timestamp(endDate.getTime());
+            endTime = new Timestamp(endDate.getTime());
         }
 
         if(queryElements.contains("like") && queryElements.contains("data")){

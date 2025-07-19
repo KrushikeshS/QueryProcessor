@@ -29,7 +29,7 @@ public class FileReader implements Reader{
                     Log log = (Log) ois.readObject();
                     logs.add(log);
                 }catch (EOFException ex){
-                    System.out.println("ex");
+//                    System.out.println("ex");
                     break;
                 }
             }
